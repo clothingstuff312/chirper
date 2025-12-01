@@ -27,7 +27,6 @@ class ChirpController extends Controller
             'message' => 'Working on something cool with Chirper...',
             'time' => '3 hours ago'
         ]
-    ];
  
     return view('home', ['chirps' => $chirps]);
     }
