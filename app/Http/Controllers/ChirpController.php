@@ -9,9 +9,10 @@ class ChirpController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        //$chirps = [
+    
+public function index()
+{
+    $chirps = [
         [
             'author' => 'Jane Doe',
             'message' => 'Just deployed my first Laravel app! 🚀',
@@ -27,9 +28,10 @@ class ChirpController extends Controller
             'message' => 'Working on something cool with Chirper...',
             'time' => '3 hours ago'
         ]
- 
+    ];
+
     return view('home', ['chirps' => $chirps]);
-    }
+}
 
     /**
      * Show the form for creating a new resource.
